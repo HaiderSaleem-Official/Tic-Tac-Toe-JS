@@ -78,7 +78,7 @@ function addTable() {
       if (
         board[0][i] === player &&
         board[1][i] === player &&
-        board[2][i] === player++
+        board[2][i] === player
       ) {
         return true;
       }
