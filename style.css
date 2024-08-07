@@ -13,6 +13,14 @@ body {
   flex-direction: column;
 }
 
+.game_name {
+  color: rgb(10, 173, 187);
+  padding-bottom: 2.5em;
+  font-size: 2.8em;
+  text-decoration:  underline rgb(10, 173, 187);;
+  opacity: 10px;
+  font-family:'Times New Roman', Times, serif ;
+}
 .main_div {
   display: flex;
   justify-content: space-between;
