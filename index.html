@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <h3>TIC TAC TOE</h3>
+      <form action="">
+        <input
+          type="text"
+          placeholder="  Enter Player 1"
+          class="name"
+          id="player1"
+        />
+        <input
+          type="text"
+          placeholder="  Enter Player 2"
+          class="name"
+          id="player2"
+        />
+      </form>
+      <a href="" onclick="setData()" class="button">Start Game</a>
+    </div>
+    <script>
+      function setData() {
+        const p1 = document.getElementById("player1").value;
+        const p2 = document.getElementById("player2").value;
+        event.preventDefault();
+        if (p1 == "" || p2 == "") {
+          alert("Enter both Players Name Correctly");
+        } else {
+          localStorage.setItem("player1", p1);
+          localStorage.setItem("player2", p2);
+          window.location.href = "GamePage.html";
+        }
+      }
+    </script>
+  </body>
+</html>
